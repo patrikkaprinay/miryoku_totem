@@ -9,6 +9,7 @@
 #define HRM_TAPPING_TERM 400
 #define HRM_QUICK_TAP 175
 #define HRM_PRIOR_IDLE 280
+#define LT_QUICK_TAP 175
 
 #define MIRYOKU_LAYER_BASE \
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
