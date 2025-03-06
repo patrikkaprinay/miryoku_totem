@@ -17,5 +17,27 @@
       flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
     };
+    hrm_l: hrm_l{
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+      flavor = "balanced";
+      tapping-term-ms = <HRM_TAPPING_TERM>;
+      quick-tap-ms = <HRM_QUICK_TAP>;
+      require-prior-idle-ms = <HRM_PRIOR_IDLE>;
+      hold-trigger-on-release;
+      hold-trigger-key-positions = <HRM_LEFT>;
+      bindings = <&kp>, <&kp>;
+    };
+    hrm_r: hrm_r{
+          compatible = "zmk,behavior-hold-tap";
+          #binding-cells = <2>;
+          flavor = "balanced";
+          tapping-term-ms = <HRM_TAPPING_TERM>;
+          quick-tap-ms = <HRM_QUICK_TAP>;
+          require-prior-idle-ms = <HRM_PRIOR_IDLE>;
+          hold-trigger-on-release;
+          hold-trigger-key-positions = <HRM_RIGHT>;
+          bindings = <&kp>, <&kp>;
+        };
   };
 };
