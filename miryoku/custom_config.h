@@ -20,14 +20,11 @@
 #define MIRYOKU_LAYER_LIST \
 MIRYOKU_X(BASE,   "Base") \
 MIRYOKU_X(EXTRA,  "Extra") \
-//MIRYOKU_X(TAP,    "Tap")
 MIRYOKU_X(BUTTON, "Button") \
 MIRYOKU_X(NAV,    "Nav") \
-//MIRYOKU_X(MOUSE,  "Mouse")
 MIRYOKU_X(MEDIA,  "Media") \
 MIRYOKU_X(NUM,    "Num") \
 MIRYOKU_X(SYM,    "Sym")
-//MIRYOKU_X(FUN,    "Fun")
 
 #define U_BASE   0
 #define U_EXTRA  1
@@ -65,7 +62,6 @@ N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 LG(TAB)  K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  LA(BSPC) \
                    K32  K33  K34       K35  K36  K37
 */
-
 // Modified Graphite (modifed to exclude need for custom morphs)
 #define MIRYOKU_LAYER_EXTRA \
 //╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮   ╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮
