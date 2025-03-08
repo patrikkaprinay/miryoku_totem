@@ -7,6 +7,9 @@
 // Also included are personalised thumb controls, with a 'magic' shift and a meh key
 // Modifications to create custom behaviours found in [miuryoku_behaviors.dsti, miryoku_behaviours.h, totem.h]
 
+// Import the custom behaviours
+#include "miryoku_behaviors.dtsi"
+
 // Customise build and behaviour timings
 #define MIRYOKU_CLIPBOARD_MAC
 #define HRM_TAPPING_TERM 400
@@ -17,7 +20,6 @@
 
 // Create custom layer map
 
-/*
 #define MIRYOKU_LAYER_LIST \
 MIRYOKU_X(BASE,   "Base") \
 MIRYOKU_X(EXTRA,  "Extra") \
@@ -37,7 +39,6 @@ MIRYOKU_X(SYM,    "Sym")
 #define U_MEDIA  4
 #define U_NUM    5
 #define U_SYM    6
-*/
 
 // QWERTY Base
 //╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮   ╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮
