@@ -101,7 +101,7 @@ LG(TAB)  K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  LA(BSPC) \
 #define MIRYOKU_LAYER_SYM \
     &kp LBRC,          &kp AMPS,          &kp ASTRK,         &kp LPAR,          &kp RBRC,             U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     U_NA,  	         U_BOOT,            \
     &kp COLON,         &kp DLLR,          &kp PRCNT,         &kp CARET,         &kp PLUS,             U_NA,              &kp LGUI,          &kp LCTRL,         &kp LALT,          &kp LSHFT,         \
-    &kp TILDE,         &kp EXCL,          &kp AT,            &kp HASH,          &kp PIPE,             U_NA,              &u_to_U_SYM,       U_NA               &kp RALT,          U_NA,              \
+    &kp TILDE,         &kp EXCL,          &kp AT,            &kp HASH,          &kp PIPE,             U_NA,              &u_to_U_SYM,       U_NA,               &kp RALT,          U_NA,              \
     U_NP,              U_NP,              &kp LPAR,          &kp RPAR,          &kp UNDER,            U_NA,              U_NA,              U_NA,              U_NP,              U_NP
 //╰──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────╯   ╰──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────╯
 
