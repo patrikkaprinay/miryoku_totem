@@ -7,7 +7,7 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       tapping-term-ms = <U_TAPPING_TERM>;
-      flavor = "tap-preferred";
+      flavor = "balanced";
       bindings = <&kp>, <&kp>;
     };
     u_lt: u_lt {
@@ -18,6 +18,10 @@
       flavor = "tap-preferred";
       bindings = <&mo>, <&kp>;
     };
+
+// Custom functions not part of base miryoku
+    // Home row mods (left and right) - define variables in custom_config.h
+    // HRM_LEFT and HRM_Right are defined in the shield mapping (e.g. totem.h )
     hrm_l: hrm_l{
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
@@ -40,5 +44,29 @@
           hold-trigger-key-positions = <HRM_RIGHT>;
           bindings = <&kp>, <&kp>;
         };
+
+    // Triple function shift
+    // Modify &sk behaviour
+    &sk{
+      release-after-ms = <STICKY_KEY_RELEASE_MS>;
+      quick_release;
+    };
+
+    // Custom mod-tap gives sticky shift on tap, regular on hold
+    shift_mt: shift_mod_tap {
+      compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <0>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <150>;
+      bindings = <&kp LSHIFT>, <&sk LSHIFT>;
+    };
+    
+    // Tap dance so double tap gives a capsword
+    m_shft: magic_shift {
+      compatible = "zmk,behavior-tap-dance";
+      #binding-cells = <0>;
+      tapping-term-ms = <200>;
+      bindings = <&shift_mt>, <&u_caps_word>;
+    };
   };
 };
