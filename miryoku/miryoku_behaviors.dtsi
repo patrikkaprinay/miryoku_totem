@@ -46,10 +46,14 @@
         };
 
     // Triple function shift
-    // Modify &sk behaviour
-    &sk {
+    // Custom sticky key
+    s_shft: sticky_shift {
+      compatible = "zmk,behavior-sticky-key";
+      #binding-cells = <1>;
+      bindings = <&kp>;
       release-after-ms = <STICKY_KEY_RELEASE_MS>;
       quick_release;
+      ignore-modifiers;
     };
 
     // Custom mod-tap gives sticky shift on tap, regular on hold
@@ -58,7 +62,7 @@
       #binding-cells = <0>;
       flavor = "hold-preferred";
       tapping-term-ms = <150>;
-      bindings = <&kp LSHIFT>, <&sk LSHIFT>;
+      bindings = <&kp LSHIFT>, <&s_shft>;
     };
     
     // Tap dance so double tap gives a capsword
