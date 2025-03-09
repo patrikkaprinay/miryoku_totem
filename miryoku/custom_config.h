@@ -36,6 +36,9 @@ MIRYOKU_X(SYM,    "Sym")
 #define U_MEDIA  4
 #define U_NUM    5
 #define U_SYM    6
+#define U_TAP    U_BASE
+#define U_MOUSE  U_BASE
+#define U_FUN    U_BASE
 
 // Custom Base Layer Mapping for Totem
 #define MIRYOKU_LAYOUTMAPPING_BASE( \
