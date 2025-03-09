@@ -47,7 +47,7 @@
 
     // Triple function shift
     // Modify &sk behaviour
-    &sk{
+    &sk {
       release-after-ms = <STICKY_KEY_RELEASE_MS>;
       quick_release;
     };
