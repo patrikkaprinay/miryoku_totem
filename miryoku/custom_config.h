@@ -7,9 +7,6 @@
 // Also included are personalised thumb controls, with a 'magic' shift and a meh key
 // Modifications to create custom behaviours found in [miuryoku_behaviors.dsti, miryoku_behaviours.h, totem.h]
 
-// Import the custom behaviours
-#include "miryoku_behaviors.dtsi"
-
 // Customise build and behaviour timings
 #define MIRYOKU_CLIPBOARD_MAC
 #define HRM_TAPPING_TERM 400
@@ -72,7 +69,7 @@ MIRYOKU_X(SYM,    "Sym")
 
 // COLEMAK-DH Extra commented out while I trial graphite
 /*
-//╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮   ╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮
+//╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮   ╭───── ─────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮
 #define MIRYOKU_LAYER_EXTRA \ 
     &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,                 &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
     HRM_L(LSHFT, A),   HRM_L(LALT, R),    HRM_L(LCTRL, S),   HRM_L(LGUI, T),    &kp G,                 &kp M,             HRM_R(LGUI, N),    HRM_R(LCTRL, E),   HRM_R(LALT, I),    HRM_R(LSHFT, O),   \
