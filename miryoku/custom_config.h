@@ -67,7 +67,7 @@ MIRYOKU_X(SYM,    "Sym")
     &kp B,             &kp L,             &kp D,             &kp W,             &kp Z,                 &kp J,             &kp F,             &kp O,             &kp U,             &kp SQT,            \
     HRM_L(LSHFT, N),   HRM_L(LALT, R),    HRM_L(LCTRL, T),   HRM_L(LGUI, S),    &kp G,                 &kp Y,             HRM_R(LGUI, H),    HRM_R(LCTRL, A),   HRM_R(LALT, E),    HRM_R(LSHFT, I),   \
     U_LT(U_BUTTON, Q), U_MT(RALT, X),     &kp M,             &kp C,             &kp V,                 &kp K,             &kp P,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
-    U_NP,             U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, BSPC),    &m_shft,              U_LT(U_SYM, RET),U_LT(U_NUM,SPACE),U_MT(LS(LC(LA)),TAB),   U_NP,             U_NP
+    U_NP,             U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, BSPC),    &m_shft,              U_LT(U_SYM, RET),U_LT(U_NUM,SPACE),U_MT(LS(LC(LALT)),TAB),   U_NP,             U_NP
 //╰──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────╯   ╰──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────╯
 
 // COLEMAK-DH Extra commented out while I trial graphite
