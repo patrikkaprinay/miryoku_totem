@@ -62,7 +62,7 @@
       #binding-cells = <2>;
       flavor = "hold-preferred";
       tapping-term-ms = <150>;
-      bindings = <&kp LSHIFT>, <&s_shft LSHIFT>;
+      bindings = <&kp>, <&s_shft>;
     };
     
     // Tap dance so double tap gives a capsword
