@@ -59,7 +59,7 @@
     // Custom mod-tap gives sticky shift on tap, regular on hold
     shift_mt: shift_mod_tap {
       compatible = "zmk,behavior-hold-tap";
-      #binding-cells = <0>;
+      #binding-cells = <2>;
       flavor = "hold-preferred";
       tapping-term-ms = <150>;
       bindings = <&kp LSHIFT>, <&s_shft>;
