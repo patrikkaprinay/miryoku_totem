@@ -56,7 +56,7 @@ MIRYOKU_X(FUN,    "Fun")
     &kp Q,            &kp W,             &kp E,             &kp R,             &kp T,                 &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
      HRM_L(LSHFT, A),   HRM_L(LALT, S),   HRM_L(LCTRL, D),  HRM_L(LGUI, F),       &kp G,                &kp H,             HRM_R(LGUI, J),    HRM_R(LCTRL, K),   HRM_R(LALT, L),  HRM_R(LSHFT, SQT), \
     U_LT(U_BUTTON, Z),   U_MT(RALT, X),    &kp C,             &kp V,             &kp B,                &kp N,             &kp M,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_FUN, SLASH),\
-    U_NP,             U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, BSPC),    M_SHIFT(LSHIFT),    U_LT(U_SYM, RET),U_LT(U_NUM,SPACE),U_MT(LS(LC(LALT)),TAB),   U_NP,             U_NP
+    U_NP,             U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, BSPC),    &m_shft,              U_LT(U_SYM, RET),U_LT(U_NUM,SPACE),U_MT(LS(LC(LALT)),TAB),   U_NP,             U_NP
 //╰──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────╯   ╰──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────╯
 
 // Modified Graphite (modifed to exclude need for custom morphs)
@@ -65,7 +65,7 @@ MIRYOKU_X(FUN,    "Fun")
     &kp B,             &kp L,             &kp D,             &kp W,             &kp Z,                 &kp J,             &kp F,             &kp O,             &kp U,             &kp SQT,            \
     HRM_L(LSHFT, N),   HRM_L(LALT, R),    HRM_L(LCTRL, T),   HRM_L(LGUI, S),    &kp G,                 &kp Y,             HRM_R(LGUI, H),    HRM_R(LCTRL, A),   HRM_R(LALT, E),    HRM_R(LSHFT, I),   \
     U_LT(U_BUTTON, Q), U_MT(RALT, X),     &kp M,             &kp C,             &kp V,                 &kp K,             &kp P,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_FUN, SLASH),\
-    U_NP,             U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, BSPC),    M_SHIFT(LSHIFT),    U_LT(U_SYM, RET),U_LT(U_NUM,SPACE),U_MT(LS(LC(LALT)),TAB),   U_NP,             U_NP
+    U_NP,             U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, BSPC),    &m_shft,              U_LT(U_SYM, RET),U_LT(U_NUM,SPACE),U_MT(LS(LC(LALT)),TAB),   U_NP,             U_NP
 //╰──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────╯   ╰──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────╯
 
 // COLEMAK-DH Extra commented out while I trial graphite
@@ -75,7 +75,7 @@ MIRYOKU_X(FUN,    "Fun")
     &kp Q,             &kp W,             &kp F,             &kp P,             &kp B,                 &kp J,             &kp L,             &kp U,             &kp Y,             &kp SQT,           \
     HRM_L(LSHFT, A),   HRM_L(LALT, R),    HRM_L(LCTRL, S),   HRM_L(LGUI, T),    &kp G,                 &kp M,             HRM_R(LGUI, N),    HRM_R(LCTRL, E),   HRM_R(LALT, I),    HRM_R(LSHFT, O),   \
     U_LT(U_BUTTON, Z), U_MT(RALT, X),     &kp C,             &kp D,             &kp V,                 &kp K,             &kp H,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_BUTTON, SLASH),\
-    U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, BSPC), M_SHIFT(LSHIFT),               U_LT(U_SYM, RET),  U_LT(U_NUM, SPACE),U_MT(LS(LC(LA)), TAB),U_NP,            U_NP
+    U_NP,              U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, BSPC), &m_shft,               U_LT(U_SYM, RET),  U_LT(U_NUM, SPACE),U_MT(LS(LC(LA)), TAB),U_NP,            U_NP
 //╰──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────╯   ╰──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────╯
 */
 
