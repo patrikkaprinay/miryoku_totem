@@ -50,7 +50,7 @@
     s_shft: sticky_shift {
       compatible = "zmk,behavior-sticky-key";
       #binding-cells = <1>;
-      bindings = <&kp LSHIFT>;
+      bindings = <&kp>;
       release-after-ms = <STICKY_KEY_RELEASE_MS>;
       quick-release;
       ignore-modifiers;
@@ -62,7 +62,7 @@
       #binding-cells = <2>;
       flavor = "hold-preferred";
       tapping-term-ms = <150>;
-      bindings = <&kp LSHIFT>, <&s_shft>;
+      bindings = <&kp LSHIFT>, <&s_shft LSHIFT>;
     };
     
     // Tap dance so double tap gives a capsword
