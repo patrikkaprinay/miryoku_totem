@@ -52,7 +52,7 @@
       #binding-cells = <1>;
       bindings = <&kp>;
       release-after-ms = <STICKY_KEY_RELEASE_MS>;
-      quick_release;
+      quick-release;
       ignore-modifiers;
     };
 
