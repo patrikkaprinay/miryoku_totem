@@ -11,7 +11,7 @@
 #define MIRYOKU_CLIPBOARD_MAC
 #define HRM_TAPPING_TERM 400
 #define HRM_QUICK_TAP 175
-#define HRM_PRIOR_IDLE 280
+#define HRM_PRIOR_IDLE 150
 #define LT_QUICK_TAP 175
 #define STICKY_KEY_RELEASE_MS 2000
 
@@ -47,14 +47,14 @@ MIRYOKU_X(FUN,    "Fun")
 ) \
              K00  K01  K02  K03  K04       K05  K06  K07  K08  K09 \
              K10  K11  K12  K13  K14       K15  K16  K17  K18  K19 \
-&kp LG(TAB)  K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  &kp LA(BSPC) \
+&kp TAB  K20  K21  K22  K23  K24       K25  K26  K27  K28  K29  &kp LA(BSPC) \
                K32  K33  K34       K35  K36  K37
 
 // QWERTY Base
 //╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮   ╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮
 #define MIRYOKU_LAYER_BASE \
     &kp Q,            &kp W,             &kp E,             &kp R,             &kp T,                 &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
-     HRM_L(LSHFT, A),   HRM_L(LALT, S),   HRM_L(LCTRL, D),  HRM_L(LGUI, F),       &kp G,                &kp H,             HRM_R(LGUI, J),    HRM_R(LCTRL, K),   HRM_R(LALT, L),  HRM_R(LSHFT, SQT), \
+     HRM_L(LSHFT, A),   HRM_L(LALT, S),   HRM_L(LCTRL, D),  HRM_L(LGUI, F),    HRM_L(LS(LC(LALT)), G),HRM_R(LS(LC(LALT)),H),HRM_R(LGUI, J),    HRM_R(LCTRL, K),   HRM_R(LALT, L),  HRM_R(LSHFT, SQT), \
     U_LT(U_BUTTON, Z),   U_MT(RALT, X),    &kp C,             &kp V,             &kp B,                &kp N,             &kp M,             &kp COMMA,         U_MT(RALT, DOT),   U_LT(U_FUN, SLASH),\
     U_NP,             U_NP,              U_LT(U_MEDIA, ESC),U_LT(U_NAV, BSPC),    &m_shft,              U_LT(U_SYM, RET),U_LT(U_NUM,SPACE),U_MT(LS(LC(LALT)),TAB),   U_NP,             U_NP
 //╰──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────╯   ╰──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────╯
