@@ -97,7 +97,7 @@ MIRYOKU_X(FUN,    "Fun")
 
 //╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮   ╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮
 #define MIRYOKU_LAYER_SYM \
-    &kp LBRC,          &kp AMPS,          &kp ASTRK,         &kp LPAR,          &kp RBRC,             U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     U_NA,  	         U_BOOT,      \
+    &kp LBRC,          &kp AMPS,          &kp ASTRK,         &kp LPAR,          &kp RBRC,             U_NA,              &kp LBRC,      &kp RBRC,     U_NA,  	         U_BOOT,      \
     &kp COLON,         &kp DLLR,          &kp PRCNT,         &kp CARET,         &kp PLUS,             &kp LS(LC(LALT)),              &kp LGUI,          &kp LCTRL,         &kp LALT,          &kp LSHFT,  \
     &kp TILDE,         &kp EXCL,          &kp AT,            &kp HASH,          &kp PIPE,             U_NA,              &u_to_U_SYM,       U_NA,               &kp RALT,          U_NA,      \
     U_NP,              U_NP,              &kp LPAR,          &kp RPAR,          &kp UNDER,            U_NA,              U_NA,              U_NA,              U_NP,              U_NP
@@ -105,7 +105,7 @@ MIRYOKU_X(FUN,    "Fun")
 
 //╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮   ╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮
 #define MIRYOKU_LAYER_NUM \
-    &kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,             U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     U_NA,  	         U_BOOT,            \
+    &kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,             U_NA,              &kp LBKT,      &kp RBKT,     U_NA,  	         U_BOOT,            \
     &kp SEMI,          &kp N4,            &kp N5,            &kp N6,            &kp EQUAL,            &kp LS(LC(LALT)),              &kp LGUI,          &kp LCTRL,         &kp LALT,          &kp LSHFT,         \
     &kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp BSLH,             U_NA,              &u_to_U_NUM,       &u_to_U_NAV,       &kp RALT,          U_NA,              \
     U_NP,              U_NP,              &kp DOT,           &kp N0,            &kp MINUS,            U_NA,              U_NA,              U_NA,              U_NP,              U_NP
