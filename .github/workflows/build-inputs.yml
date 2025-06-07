@@ -6,12 +6,13 @@ on:
   workflow_dispatch:
     inputs:
       board:
+        default: 'seeeduino_xiao_ble'
         description: 'board'
         required: true
       shield:
+        default: 'totem_left,totem_right'
         description: 'shield'
         required: false
-        default: 'default'
       alphas:
         description: 'alphas'
         required: false
