@@ -18,6 +18,7 @@
 #define HRM_PRIOR_IDLE 150
 #define LT_QUICK_TAP 175
 #define STICKY_KEY_RELEASE_MS 2000
+#undef COMBO_TERM
 #define COMBO_TERM 50
 #define COMBO_PRIOR_IDLE 50
 
@@ -58,8 +59,7 @@ MIRYOKU_X(FUN,    "Fun")
 
 // Define the combos used
 
-ZMK_COMBO(l_parenth, &kp LPAR, LB0 LB1, U_BASE U_NUM U_NAV, COMBO_TERM, COMBO_PRIOR_IDLE)
-
+// ZMK_COMBO(l_parenth, &kp LPAR, LB0 LB1, U_BASE U_NUM U_NAV, COMBO_TERM, COMBO_PRIOR_IDLE)
 // QWERTY Base
 //╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮   ╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮
 #define MIRYOKU_LAYER_BASE \
