@@ -55,11 +55,11 @@ MIRYOKU_X(FUN,    "Fun")
 
 // Define the combos used
 // Macro first
-#define MIRYOKU_CUSTOM_COMBO_MACRO(LAYER, POSITION, BINDING) \
-    combo_ ## BINDING { \
+#define MIRYOKU_CUSTOM_COMBO_MACRO(NAME, LAYER, POSITION, BINDING) \
+    combo_ ## NAME { \
   layers = <LAYER>; \
   key-positions =  <POSITION>; \
-  bindings = <&kp BINDING>; \
+  bindings = <BINDING>; \
   timeout-ms = <COMBO_TERM>; \
   require-prior-idle-ms = <COMBO_PRIOR_IDLE>; \
 };
@@ -67,9 +67,10 @@ MIRYOKU_X(FUN,    "Fun")
 / {
   combos {
     compatible = "zmk,combos";
-        MIRYOKU_CUSTOM_COMBO_MACRO(-1, 23 24, LPAR)
+        MIRYOKU_CUSTOM_COMBO_MACRO(test,-1,23 24, &kp L)
     };
 };
+
 // QWERTY Base
 //╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮   ╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮
 #define MIRYOKU_LAYER_BASE \
