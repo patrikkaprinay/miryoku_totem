@@ -59,7 +59,7 @@ MIRYOKU_X(FUN,    "Fun")
 
 // Define the combos used
 
-ZMK_COMBO(l_parenth, &kp A, LB0 LB1, ALL, COMBO_TERM, COMBO_PRIOR_IDLE)
+ZMK_COMBO(esc,  &kp ESC, 0 1, ALL, 25)
 // QWERTY Base
 //╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮   ╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮
 #define MIRYOKU_LAYER_BASE \
