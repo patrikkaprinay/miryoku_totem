@@ -65,7 +65,7 @@ on:
       modules:
         description: 'modules'
         required: false
-        default: 'default'
+        default: 'urob/zmk-helpers/main'
 jobs:
   process-inputs:
     runs-on: ubuntu-latest
