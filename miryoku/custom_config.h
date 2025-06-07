@@ -7,6 +7,10 @@
 // Also included are personalised thumb controls, with a 'magic' shift and a meh key
 // Modifications to create custom behaviours found in [miuryoku_behaviors.dsti, miryoku_behaviours.h, totem.h]
 
+// Import Urobs helpers - used for combos
+#include "zmk-helpers/helper.h"
+#include "zmk-helpers/key-labels/totem.h"
+
 // Customise build and behaviour timings
 #define MIRYOKU_CLIPBOARD_MAC
 #define HRM_TAPPING_TERM 400
@@ -14,6 +18,8 @@
 #define HRM_PRIOR_IDLE 150
 #define LT_QUICK_TAP 175
 #define STICKY_KEY_RELEASE_MS 2000
+#define COMBO_TERM 50
+#define COMBO_PRIOR_IDLE 50
 
 // Create custom layer map
 
@@ -50,6 +56,10 @@ MIRYOKU_X(FUN,    "Fun")
  &kp ESC  K20  K21  K22  K23  K24       K25  K26  K27  K28  K29 &kp LS(LC(LA(TAB))) \
                     K32  K33  K34       K35  K36  K37
 
+// Define the combos used
+
+ZMK_COMBO(l_parenth, &kp LPAR, LB0 LB1, U_BASE U_NUM U_NAV, COMBO_TERM, COMBO_PRIOR_IDLE)
+
 // QWERTY Base
 //╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮   ╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮
 #define MIRYOKU_LAYER_BASE \
@@ -60,7 +70,7 @@ MIRYOKU_X(FUN,    "Fun")
 //╰──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────╯   ╰──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────╯
 
 // Modified Graphite (modifed to exclude need for custom morphs)
-//╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮   ╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮
+//╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮   ╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮custo
 #define MIRYOKU_LAYER_EXTRA \
     &kp B,             &kp L,             &kp D,             &kp W,             &kp Z,                 &kp J,             &kp F,             &kp O,             &kp U,             &kp SQT,            \
     HRM_L(LSHFT, N),   HRM_L(LALT, R),    HRM_L(LCTRL, T),   HRM_L(LGUI, S),    &kp G,                 &kp Y,             HRM_R(LGUI, H),    HRM_R(LCTRL, A),   HRM_R(LALT, E),    HRM_R(LSHFT, I),   \
@@ -82,7 +92,7 @@ MIRYOKU_X(FUN,    "Fun")
 //╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮   ╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮
 #define MIRYOKU_LAYER_NAV \
     U_BOOT,            U_CUT,  	         U_CPY,                  U_PST,      U_NA,                   U_RDO,             U_PST,             U_CPY,             U_CUT,             U_UND,             \
-    &kp LSHFT,         &kp LALT,          &kp LCTRL,         &kp LGUI,          U_NA,                &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         &u_caps_word,      \
+    &kp LSHFT,         &kp LALT,          &kp LCTRL,         &kp LGUI,          &kp LS(LC(LALT)),                &kp LEFT,          &kp DOWN,          &kp UP,            &kp RIGHT,         &u_caps_word,      \
     U_NA,              &kp RALT,          &u_to_U_NUM,       &u_to_U_NAV,       U_NA,                &kp HOME,          &kp PG_DN,         &kp PG_UP,         &kp END,           &kp INS,           \
     U_NP,              U_NP,              U_NA,              U_NA,              U_NA,                &kp RET,           &kp BSPC,          &kp TAB,           U_NP,              U_NP
 //╰──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────╯   ╰──────────────────┴──────────────────┴──────────────────┴──────────────────┴──────────────────╯
