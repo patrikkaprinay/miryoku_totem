@@ -7,10 +7,6 @@
 // Also included are personalised thumb controls, with a 'magic' shift and a meh key
 // Modifications to create custom behaviours found in [miuryoku_behaviors.dsti, miryoku_behaviours.h, totem.h]
 
-// Import Urobs helpers - used for combos
-#include "zmk-helpers/helper.h"
-#include "zmk-helpers/key-labels/totem.h"
-
 // Customise build and behaviour timings
 #define MIRYOKU_CLIPBOARD_MAC
 #define HRM_TAPPING_TERM 400
@@ -58,8 +54,22 @@ MIRYOKU_X(FUN,    "Fun")
                     K32  K33  K34       K35  K36  K37
 
 // Define the combos used
+// Macro first
+#define MIRYOKU_CUSTOM_COMBO_MACRO(LAYER, POSITION, BINDING) \
+    combo_ ## BINDING { \
+  layers = <LAYER>; \
+  key-positions =  <POSITION>; \
+  bindings = <&kp BINDING>; \
+  timeout-ms = <COMBO_TERM>; \
+  require-prior-idle-ms = <COMBO_PRIOR_IDLE>; \
+};
 
-ZMK_COMBO(esc,  &kp ESC, 0 1, ALL, 25)
+/ {
+  combos {
+    compatible = "zmk,combos";
+        MIRYOKU_CUSTOM_COMBO_MACRO(-1, 23 24, LPAR)
+    };
+};
 // QWERTY Base
 //╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮   ╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮
 #define MIRYOKU_LAYER_BASE \
