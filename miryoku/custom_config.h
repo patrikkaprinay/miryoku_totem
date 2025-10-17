@@ -9,9 +9,9 @@
 
 // Customise build and behaviour timings
 #define MIRYOKU_CLIPBOARD_MAC
-#define HRM_TAPPING_TERM 400
-#define HRM_QUICK_TAP 175
-#define HRM_PRIOR_IDLE 150
+#define HRM_TAPPING_TERM 350
+#define HRM_QUICK_TAP 125
+#define HRM_PRIOR_IDLE 100
 #define LT_QUICK_TAP 175
 #define STICKY_KEY_RELEASE_MS 2000
 #undef COMBO_TERM
