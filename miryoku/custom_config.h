@@ -64,12 +64,12 @@ MIRYOKU_X(FUN,    "Fun")
   require-prior-idle-ms = <COMBO_PRIOR_IDLE>; \
 };
 
-/ {
-  combos {
-    compatible = "zmk,combos";
-        MIRYOKU_CUSTOM_COMBO_MACRO(test,-1,23 24, &kp L)
-    };
-};
+// / {
+//   combos {
+//     compatible = "zmk,combos";
+//         MIRYOKU_CUSTOM_COMBO_MACRO(test,-1,23 24, &kp L)
+//     };
+// };
 
 // QWERTY Base
 //╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮   ╭──────────────────┬──────────────────┬──────────────────┬──────────────────┬──────────────────╮
