@@ -28,6 +28,11 @@
 MIRYOKU_LAYER_LIST
 #undef MIRYOKU_X
   };
+  kscan: kscan {
+    compatible = "zmk,kscan-gpio-matrix";
+    diode-direction = "col2row";
+    wakeup-source;
+  };
 };
 
 #include "miryoku_shift_functions.dtsi"
