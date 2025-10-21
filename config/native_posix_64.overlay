@@ -5,4 +5,5 @@
     /delete-property/ exit-after;
     rows = <4>;
     columns = <32>;
+    wakeup-source;
 };
